@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Portfolio</title> 
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,300italic,500,700' rel='stylesheet' type='text/css'> 
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
+<link data-turbolinks-track="true" href="/assets/application-f7aa79b389eed3447dbd88f8dcc0b59e.css" media="all" rel="stylesheet" /> 
+<script data-turbolinks-track="true" src="/assets/application-4fba09a36c46587a0f07211966615115.js"></script>
+
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="//unslider.com/unslider.min.js"></script>
+
+<%= javascript_include_tag "slideshow", "data-turbolinks-track" => true %>
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="YFL637T73IdmsFA5F4nYuTd2ZhDzerGb6urn1lXhRNE=" name="csrf-token" />
+
+</head> 
+
+<body> 
+
+
+<div class = "banner">		<%# Aqui se define la clase "banner" para trabajar el slideshow %>
+	<ul>
+		<li><%= image_tag 'https://dl.dropboxusercontent.com/s/hmg23gwp6lnrcqt/Screenshot%202015-05-08%2011.35.17.png' %></li>
+		<li><%= image_tag 'https://dl.dropboxusercontent.com/s/r9qsxep475ybxyw/Screenshot%202015-05-08%2011.36.25.png' %></li>
+		<li><%= image_tag 'https://dl.dropboxusercontent.com/s/sivcgopwt2ik7i0/Screenshot%202015-05-08%2011.38.27.png' %></li>
+		<li><%= image_tag 'https://dl.dropboxusercontent.com/s/cuscwlv1coaarnb/Screenshot%202015-05-08%2011.39.52.png' %></li>
+		<li><%= image_tag 'https://dl.dropboxusercontent.com/s/ptlk1r3b0omu8yl/Screenshot%202015-05-08%2011.33.31.png' %></li>
+		<li><%= image_tag 'https://dl.dropboxusercontent.com/s/yzlvfdydaae0mmt/Screenshot%202015-05-08%2011.41.44.png' %></li>
+	</ul>
+</div>
+
+<div class = "container"
+	<% @projects.each do |p| %>
+		<%= link_to (p) do %>
+			<div class ="project col-xs-4"> 
+				<div class="thumbnail-header"> 
+					<div class="thumbnail-header-btn"></div> 
+					<div class="thumbnail-header-btn"></div> 
+					<div class="thumbnail-header-btn"></div>
+				</div>
+				<img src= <%= p.screenshot %>> </img>
+				<h3><%= p.title %> </h3>
+				<p> <%= p.description %> </p>
+			</div>
+		<% end %>
+	<% end %>
+</div>
+
+
+
+</body> 
+</html>
