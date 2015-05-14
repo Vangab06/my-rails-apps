@@ -298,7 +298,7 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	position: relative;			// The position property specifies the type of positioning method used for an element (static, relative, absolute or fixed).
 								// relative: the element is positioned relative to its normal position, so "left:20" adds 20 pixels to the element's LEFT 
 								// position 
-	overflow: hidden;				// The overflow property specifies what happens if content overflows an element's box.
+	overflow: auto;				// The overflow property specifies what happens if content overflows an element's box.
 								// auto: If overflow is clipped, a scroll-bar should be added to see the rest of the content 
 }
 
