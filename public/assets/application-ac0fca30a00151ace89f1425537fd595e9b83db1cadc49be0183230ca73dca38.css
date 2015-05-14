@@ -1,0 +1,1502 @@
+@charset "UTF-8";
+/* line 5, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Aplica a todo */
+/* line 16, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+body, html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 25, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+a.btn {
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 20;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  height: 60px;
+  line-height: 60px;
+  margin: 40px 0px;
+  padding: 0px;
+  transition: background-color .5s;
+  width: 200px;
+}
+
+/* Welcome Section */
+/* line 41, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.main .container {
+  margin: 200px 0;
+}
+
+/* line 45, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.main h2 {
+  color: #000;
+  font-size: 48px;
+  line-height: 56px;
+  text-align: right;
+}
+
+/* line 52, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.home h2 {
+  color: #fff;
+}
+
+/* line 55, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+a.btn:hover, .nav li a:hover, .nav-btn:hover {
+  background-color: #cc6cff;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+
+/* line 61, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.home .jumbotron {
+  background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 600px;
+  width: 100%;
+}
+
+/* Header de la aplicación */
+/* line 72, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* line 79, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.menu li {
+  display: inline;
+  line-height: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  height: 100px;
+  margin: 0 20px 0 0;
+}
+
+/* line 89, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.menu li a {
+  color: #000;
+}
+
+/* line 93, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.name h1 {
+  color: blue;
+  font-size: 18px;
+  line-height: 100px;
+  height: 100px;
+  margin: 0;
+  text-align: right;
+}
+
+/* Footer de la aplicación */
+/* line 104, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.footer {
+  background-color: #fff;
+  height: 100px;
+  text-align: right;
+  width: 100%;
+}
+
+/* line 111, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.footer .social_media {
+  margin: 65px 0 20px;
+  width: 100%;
+}
+
+/* line 116, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.social_media li {
+  display: inline-block;
+  height: 24px;
+  width: 24px;
+  margin: 0 0 0 10px;
+  text-align: left;
+  text-indent: -9999px;
+}
+
+/* line 126, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.social_media li a {
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+
+/* Iconos de cada una de las redes sociales */
+/* line 134, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.github {
+  background-image: url(github.png);
+  background-position: center center;
+}
+
+/* line 141, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.linkedin {
+  background-image: url(linkedin.png);
+  background-position: center center;
+}
+
+/* line 146, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.tumblr {
+  background-image: url(/tumblr.svg);
+  background-position: center center;
+}
+
+/* line 150, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.twitter {
+  background-image: url(twitter.png);
+  background-position: center center;
+}
+
+/* line 155, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.youtube {
+  background-image: url(youtube.png);
+  background-position: center center;
+}
+
+/* line 159, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.vimeo {
+  background-image: url(/vimeo.svg);
+  background-position: center center;
+}
+
+/* line 163, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.instagram {
+  background-image: url(/assets/instagram-057a090ac0e0184c68efc07e412eec3b.svg);
+  background-position: center center;
+}
+
+/* line 167, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.facebook {
+  background-image: url(/assets/facebook-70848fad6bf158b9a52e47d9bc956b8a.svg);
+  background-position: center center;
+}
+
+/* line 171, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.pinterest {
+  background-image: url(/pinterest.svg);
+  background-position: center center;
+}
+
+/* line 175, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.gplus {
+  background-image: url(/assets/gplus-b3a33145641e08e048cd10ed0ece59ce.svg);
+  background-position: center center;
+}
+
+/* line 179, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.portfolio .jumbotron {
+  height: 500px;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 185, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.portfolio .slideshow-container {
+  width: 100%;
+}
+
+/* line 188, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.portfolio .slide {
+  height: 500px;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+/* line 196, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.slide img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+/* Frame de cada proyecto */
+/* line 205, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.thumbnail-header {
+  background-color: #eaeff4;
+  display: block;
+  height: 20px;
+  width: 100%;
+}
+
+/* line 212, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.thumbnail-header-btn {
+  background-color: #fff;
+  border-radius: 100%;
+  float: left;
+  height: 10px;
+  margin: 5px 0 0 5px;
+  width: 10px;
+}
+
+/* Display de cada proyecto */
+/* line 223, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.project, .project:hover {
+  border: 0;
+  border-radius: 0;
+  height: 330px;
+  width: 370px;
+  color: #000;
+  text-decoration: none;
+  transition: color .5s;
+  overflow: hidden;
+  padding: 0 0 0 0;
+}
+
+/* line 238, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.project:hover {
+  color: blue;
+}
+
+/* line 242, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.project img {
+  border: none;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 249, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.project h3, .project p, .about h2, .about p {
+  padding: 0 0 0;
+}
+
+/* line 255, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.about {
+  max-height: 400px;
+}
+
+/* line 259, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.about h2 {
+  margin: 0 0 40px;
+}
+
+/* line 262, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.contact .row {
+  margin: 80px 0 0;
+}
+
+/* line 265, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.contact .col-md-2 a {
+  display: block;
+  height: 80px;
+  margin: 0 auto 40px;
+  text-indent: -9999px;
+  width: 80px;
+}
+
+/* line 272, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.highlight {
+  background-color: #eaeff4;
+  color: #000;
+  padding: 0 10px 0;
+}
+
+/* line 277, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.right {
+  float: right;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 281, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .container {
+    padding: 0 20px 0 100px;
+    width: 100%;
+  }
+
+  /* line 285, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .slide img {
+    height: 100%;
+    width: auto;
+  }
+
+  /* line 289, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .contact .row:last-child {
+    margin: 0;
+  }
+}
+/* Slideshow */
+/* line 295, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.banner {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 303, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.banner li {
+  list-style: none;
+}
+
+/* line 309, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.banner ul li {
+  float: left;
+  height: 800px;
+  width: 400px;
+}
+
+/* line 315, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.banner .unslider {
+  speed: 500;
+  delay: 3000;
+  complete: function();
+  keys: true;
+  dots: true;
+  fluid: false;
+}
+
+/* Grid */
+/* line 326, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 332, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 339, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 347, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 353, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 359, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .container {
+    width: 1170px;
+  }
+}
+/* line 364, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 369, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 375, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: center;
+}
+
+/* line 378, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 381, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-11 {
+  width: 91.66666667%;
+}
+
+/* line 384, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+/* line 387, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 390, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-8 {
+  width: 66.66666667%;
+}
+
+/* line 393, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-7 {
+  width: 58.33333333%;
+}
+
+/* line 396, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 399, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-5 {
+  width: 41.66666667%;
+}
+
+/* line 402, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+/* line 405, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 408, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+/* line 411, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-1 {
+  width: 8.33333333%;
+}
+
+/* line 414, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 417, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+
+/* line 420, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+
+/* line 423, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 426, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+
+/* line 429, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+
+/* line 432, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 435, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+
+/* line 438, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+
+/* line 441, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 444, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+
+/* line 447, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+
+/* line 450, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-pull-0 {
+  right: auto;
+}
+
+/* line 453, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 456, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+
+/* line 459, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+
+/* line 462, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 465, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+
+/* line 468, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+
+/* line 471, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 474, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+
+/* line 477, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+
+/* line 480, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 483, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+
+/* line 486, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+
+/* line 489, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-push-0 {
+  left: auto;
+}
+
+/* line 492, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+/* line 495, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+/* line 498, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+
+/* line 501, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 504, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+
+/* line 507, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+
+/* line 510, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 513, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+
+/* line 516, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+
+/* line 519, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 522, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+
+/* line 525, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+
+/* line 528, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+@media (min-width: 768px) {
+  /* line 532, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+  /* line 535, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 538, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 541, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 544, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 547, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 550, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 553, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 556, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 559, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 562, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 565, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 568, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 571, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  /* line 574, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 577, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 580, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  /* line 583, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 586, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 589, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  /* line 592, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 595, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 598, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  /* line 601, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 604, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 607, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-pull-0 {
+    right: auto;
+  }
+
+  /* line 610, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  /* line 613, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 616, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 619, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  /* line 622, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 625, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 628, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  /* line 631, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 634, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 637, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  /* line 640, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 643, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 646, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-push-0 {
+    left: auto;
+  }
+
+  /* line 649, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 652, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 655, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 658, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 661, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 664, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 667, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 670, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 673, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 676, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 679, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 682, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 685, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 690, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+
+  /* line 693, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 696, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 699, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 702, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 705, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 708, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 711, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 714, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 717, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 720, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 723, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 726, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 729, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  /* line 732, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 735, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 738, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  /* line 741, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 744, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 747, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  /* line 750, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 753, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 756, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  /* line 759, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 762, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 765, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-pull-0 {
+    right: auto;
+  }
+
+  /* line 768, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  /* line 771, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 774, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 777, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  /* line 780, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 783, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 786, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  /* line 789, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 792, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 795, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  /* line 798, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 801, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 804, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-push-0 {
+    left: auto;
+  }
+
+  /* line 807, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 810, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 813, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 816, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 819, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 822, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 825, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 828, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 831, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 834, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 837, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 840, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 843, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 848, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  /* line 851, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 854, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 857, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 860, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 863, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 866, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 869, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 872, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 875, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 878, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 881, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 884, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 887, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  /* line 890, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 893, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 896, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  /* line 899, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 902, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 905, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  /* line 908, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 911, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 914, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  /* line 917, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 920, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 923, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+
+  /* line 926, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  /* line 929, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 932, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 935, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  /* line 938, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 941, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 944, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  /* line 947, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 950, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 953, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  /* line 956, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 959, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 962, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-push-0 {
+    left: auto;
+  }
+
+  /* line 965, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 968, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 971, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 974, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 977, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 980, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 983, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 986, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 989, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 992, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 995, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 998, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 1001, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+/* line 1006, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1019, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+.clearfix:after,
+.container:after,
+.container-fluid:after,
+.row:after {
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  /* line 1027, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .projects h2 {
+    top: 5%;
+  }
+
+  /* line 1031, C:/Users/Ricardo/portfolio/app/assets/stylesheets/pages.css.scss */
+  .projects a {
+    padding: 8px 15px;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
