@@ -120,7 +120,7 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	width:54px;
 	margin:0 0 0 10px;
 	text-align:left;
-	text-indent:0px;		// The text-indent property specifies the indentation of the first line in a text-block.
+	text-indent:-9999px;		// The text-indent property specifies the indentation of the first line in a text-block.
 }
 	
 .social_media li a {
@@ -139,21 +139,21 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 }
 	
 .linkedin {
-	background-image: url(\linkedin.png);
+	background-image: url(/linkedin.png);
 	background-position:center center
 }
 	
 .tumblr
-	{background-image:url(\tumblr.svg);
+	{background-image:url(/tumblr.svg);
 	background-position:center center}
 	
 .twitter {
-	background-image: url(\twitter.png);
+	background-image: url(/twitter.png);
 	background-position:center center
 }
 
 .youtube {
-	background-image: url(\images\youtube.png);
+	background-image: url(/images\youtube.png);
 	background-position:center center
 }
 	
