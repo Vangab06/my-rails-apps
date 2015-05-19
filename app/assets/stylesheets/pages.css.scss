@@ -132,14 +132,14 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 /* Iconos de cada una de las redes sociales */
 	
 .github	{
-	background-image: url ("http://www.flaticon.com/free-icon/github-logo_33600");	// The background-image property sets one or more background images for an element. The background of an element 
+	background-image: url ('http://www.flaticon.com/free-icon/github-logo_33600');	// The background-image property sets one or more background images for an element. The background of an element 
 										// is the total size of the element, including padding and border (but not the margin). By default, a background-image 
 										// is placed at the top-left corner of an element, and repeated both vertically and horizontally.
 	background-position:center center;	// The background-position property sets the starting position of a background image.
 }
 	
 .linkedin {
-	background-image: url("https://pbs.twimg.com/profile_images/2945466711/12e018532d913494d841f79da5dd70bf_400x400.png");
+	background-image: url('https://pbs.twimg.com/profile_images/2945466711/12e018532d913494d841f79da5dd70bf_400x400.png');
 	background-position:center center
 }
 	
@@ -148,12 +148,12 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	background-position:center center}
 	
 .twitter {
-	background-image: url("http://cdn.flaticon.com/png/256/34238.png");
+	background-image: url('http://cdn.flaticon.com/png/256/34238.png');
 	background-position:center center
 }
 
 .youtube {
-	background-image: url(/github.svg);
+	background-image: url('/github.svg');
 	background-position:center center
 }
 	
