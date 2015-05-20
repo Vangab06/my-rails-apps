@@ -12,10 +12,17 @@
 <meta content="authenticity_token" name="csrf-param" />
 <meta content="YFL637T73IdmsFA5F4nYuTd2ZhDzerGb6urn1lXhRNE=" name="csrf-token" />
 
-<script>
+<script type="text/javascript">
 	$(document).ready(function(){
 		$(function() {
-			$('.banner').unslider();
+			$('.banner').unslider({
+				speed: 500,               //  The speed to animate each slide (in milliseconds)
+				delay: 3000,              //  The delay between slide animations (in milliseconds)
+				complete: function() {},  //  A function that gets called after every slide animation
+				keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+				dots: true,               //  Display dot navigation
+				fluid: false              //  Support responsive design. May break non-responsive designs
+			});
 		});
 	});
 </script>
