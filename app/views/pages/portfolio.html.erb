@@ -7,16 +7,51 @@
 <meta content="authenticity_token" name="csrf-param" />
 <meta content="YFL637T73IdmsFA5F4nYuTd2ZhDzerGb6urn1lXhRNE=" name="csrf-token" />
 
-<link href='https://fonts.googleapis.com/css?family=Roboto:100,300,300italic,500,700' rel='stylesheet' type='text/css'> 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"    rel="stylesheet" type="text/css" > 
+<link href = "https://fonts.googleapis.com/css?family=Roboto:100,300,300italic,500,700" rel='stylesheet' type='text/css'> 
+<link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"    rel="stylesheet" type="text/css" > 
 
 <script src = "//code.jquery.com/jquery-latest.min.js"></script>
 <script src = "//unslider.com/unslider.min.js"></script>
 
 <script>
-	$(function() {
-		$('.banner').unslider();
+$(function() {
+	$('.banner').unslider({
+		//  The speed to animate each slide (in milliseconds)
+		speed: 500,       
+		//  The delay between slide animations (in milliseconds)      
+		delay: 3000,  
+		// init delay, false for no delay (integer or boolean)
+		init: 0,     
+		// pause on hover (boolean) 
+		pause: true,     
+		// infinitely looping (boolean)
+		loop: true,      
+		// keyboard shortcuts (boolean)
+		keys: false,       
+		// display dots pagination (boolean)
+		dots: false,       
+		// display prev/next arrows (boolean)
+		arrows: false,   
+		// text or html inside prev button (string) 
+		prev: '&larr;',
+		// same as for prev option
+		next: '&rarr;',
+		// is it a percentage width? (boolean)
+		fluid: false,      
+		// invoke before animation (function with argument)
+		starting: false,
+		// invoke after animation (function with argument)  
+		complete: false,   
+		// slides container selector
+		items: '>ul', 
+		// slidable items selector
+		item: '>li',   
+		// easing function to use for animation
+		easing: 'swing',
+		// enable autoplay on initialisation
+		autoplay: true 
 	});
+});
 </script>
 
 </head> 
