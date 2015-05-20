@@ -14,42 +14,25 @@
 <script src = "//unslider.com/unslider.min.js"></script>
 
 <script>
-$(function() {
+$(document).ready(function() {
 	$('.banner').unslider({
-		//  The speed to animate each slide (in milliseconds)
-		speed: 500,       
-		//  The delay between slide animations (in milliseconds)      
-		delay: 3000,  
-		// init delay, false for no delay (integer or boolean)
-		init: 0,     
-		// pause on hover (boolean) 
-		pause: true,     
-		// infinitely looping (boolean)
-		loop: true,      
-		// keyboard shortcuts (boolean)
-		keys: false,       
-		// display dots pagination (boolean)
-		dots: false,       
-		// display prev/next arrows (boolean)
-		arrows: true,   
-		// text or html inside prev button (string) 
-		prev: '&larr;',
-		// same as for prev option
-		next: '&rarr;',
-		// is it a percentage width? (boolean)
-		fluid: false,      
-		// invoke before animation (function with argument)
-		starting: false,
-		// invoke after animation (function with argument)  
-		complete: false,   
-		// slides container selector
-		items: '>ul', 
-		// slidable items selector
-		item: '>li',   
-		// easing function to use for animation
-		easing: 'swing',
-		// enable autoplay on initialisation
-		autoplay: true 
+		speed: 500,       	//  The speed to animate each slide (in milliseconds)
+		delay: 3000,  		//  The delay between slide animations (in milliseconds)      		
+		init: 0,     		// init delay, false for no delay (integer or boolean)
+		pause: true,     	// pause on hover (boolean) 
+		loop: true,      	// infinitely looping (boolean)
+		keys: false,       	// keyboard shortcuts (boolean)
+		dots: true,       	// display dots pagination (boolean)
+		arrows: true,   	// display prev/next arrows (boolean)	
+		prev: '&larr;',		// text or html inside prev button (string) 
+		next: '&rarr;',		// same as for prev option
+		fluid: false,      	// is it a percentage width? (boolean)
+		starting: false,	// invoke before animation (function with argument)
+		complete: function() {},   	// invoke after animation (function with argument)  
+		items: '>ul', 		// slides container selector
+		item: '>li',   		// slidable items selector
+		easing: 'swing',	// easing function to use for animation
+		autoplay: true 		// enable autoplay on initialisation
 	});
 });
 </script>
