@@ -10,29 +10,31 @@
 <link href = "https://fonts.googleapis.com/css?family=Roboto:100,300,300italic,500,700" rel='stylesheet' type='text/css'> 
 <link href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"    rel="stylesheet" type="text/css" > 
 
-<script src = "//code.jquery.com/jquery-latest.min.js"></script>
-<script src = "//unslider.com/unslider.min.js"></script>
+<script src = "http://code.jquery.com/jquery-latest.min.js"></script>
+<script src = "http://unslider.com/unslider.min.js"></script>
 
 <script>
 $(document).ready(function() {
-	$('.banner').unslider({
-		speed: 500,       	//  The speed to animate each slide (in milliseconds)
-		delay: 3000,  		//  The delay between slide animations (in milliseconds)      		
-		init: 0,     		// init delay, false for no delay (integer or boolean)
-		pause: true,     	// pause on hover (boolean) 
-		loop: true,      	// infinitely looping (boolean)
-		keys: false,       	// keyboard shortcuts (boolean)
-		dots: true,       	// display dots pagination (boolean)
-		arrows: true,   	// display prev/next arrows (boolean)	
-		prev: '&larr;',		// text or html inside prev button (string) 
-		next: '&rarr;',		// same as for prev option
-		fluid: false,      	// is it a percentage width? (boolean)
-		starting: false,	// invoke before animation (function with argument)
-		complete: function() {},   	// invoke after animation (function with argument)  
-		items: '>ul', 		// slides container selector
-		item: '>li',   		// slidable items selector
-		easing: 'swing',	// easing function to use for animation
-		autoplay: true 		// enable autoplay on initialisation
+	$ function() {
+		$('.banner').unslider({
+			speed: 500,       	//  The speed to animate each slide (in milliseconds)
+			delay: 3000,  		//  The delay between slide animations (in milliseconds)      		
+			init: 0,     		// init delay, false for no delay (integer or boolean)
+			pause: true,     	// pause on hover (boolean) 
+			loop: true,      	// infinitely looping (boolean)
+			keys: false,       	// keyboard shortcuts (boolean)
+			dots: true,       	// display dots pagination (boolean)
+			arrows: true,   	// display prev/next arrows (boolean)	
+			prev: '&larr;',		// text or html inside prev button (string) 
+			next: '&rarr;',		// same as for prev option
+			fluid: false,      	// is it a percentage width? (boolean)
+			starting: false,	// invoke before animation (function with argument)
+			complete: function() {},   	// invoke after animation (function with argument)  
+			items: '>ul', 		// slides container selector
+			item: '>li',   		// slidable items selector
+			easing: 'swing',	// easing function to use for animation
+			autoplay: true 		// enable autoplay on initialisation
+		});
 	});
 });
 </script>

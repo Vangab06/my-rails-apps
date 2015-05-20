@@ -314,6 +314,18 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	float: left;				// The float property specifies whether or not a box (an element) should float.
 }
 
+.dots li {
+	position: relative;
+    bottom: 50px;
+    left: 215px;
+    display: inline;
+    margin: 5px;
+ }
+ 
+.dots .active {
+    color:#fff
+}
+
 	/* Grid */
 
 * {
