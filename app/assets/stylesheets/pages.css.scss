@@ -335,21 +335,25 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 }
 
 .prev {
-position: absolute;
-top: 50%;
-bottom: 50%;
-left: 20px;
-font-size: 20px;
-z-index: 600;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	left: 20px;
+	height:24px;
+	width:24px;
+	font-size: 20px;
+	z-index: 600;
 }
 
 .next {
-position: absolute;
-top: 50%;
-bottom: 50%;
-right: 20px;
-font-size: 20px;
-z-index: 600;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	right: 20px;
+	height:24px;
+	width:24px;
+	font-size: 20px;
+	z-index: 600;
 }
 
 	/* Grid */
