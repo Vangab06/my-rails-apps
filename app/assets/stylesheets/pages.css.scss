@@ -308,17 +308,26 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 								// position 
 	overflow: auto;				// The overflow property specifies what happens if content overflows an element's box.
 								// auto: If overflow is clipped, a scroll-bar should be added to see the rest of the content
+	min-height: 100%;
+	width: 100%;
+	top: 0;
+	bottom: 0;
 }
 
 .banner li {
 	list-style: none;			// The list-style shorthand property sets all the list properties in one declaration. The properties that can be set, 
 								// are (in order): list-style-type, list-style-position, list-style-image. If one of the values above are missing, 
 								// e.g. "list-style:circle inside;", the default value for the missing property will be inserted, if any.
+	position: relative;
+    top: 0;
+    bottom: 0;
+	min-height: 100%;
+	width: 100%;
 }
 
 .banner ul li {
-	margin: 0;
-	padding: 0;
+	min-height: 100%;
+	width: 100%;
 	float: left;				// The float property specifies whether or not a box (an element) should float.
 }
 
@@ -341,7 +350,7 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	left: 20px;
 	height:24px;
 	width:24px;
-	
+	font-size: 20px;
 	z-index: 600;
 }
 
