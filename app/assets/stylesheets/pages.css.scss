@@ -304,6 +304,30 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	top: 0;
 }
 
+.prev {
+	display:block;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	left: 20px;
+	height:24px;
+	width:24px;
+	font-size: 20px;
+	z-index: 600;
+}
+
+.next {
+	display:block;
+	position: absolute;
+	top: 50%;
+	bottom: 50%;
+	right: 20px;
+	height:24px;
+	width:24px;
+	font-size: 20px;
+	z-index: 600;
+}
+
 .banner { 
 	position: relative;			// The position property specifies the type of positioning method used for an element (static, relative, absolute or fixed).
 								// relative: the element is positioned relative to its normal position, so "left:20" adds 20 pixels to the element's LEFT 
@@ -343,30 +367,6 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
  
 .dots .active {
     color:#fff
-}
-
-.prev {
-	display:inline-block;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	left: 20px;
-	height:24px;
-	width:24px;
-	font-size: 20px;
-	z-index: 600;
-}
-
-.next {
-	display:block;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	right: 20px;
-	height:24px;
-	width:24px;
-	font-size: 20px;
-	z-index: 600;
 }
 
 a img{
