@@ -22,7 +22,7 @@ $(document).ready(function(){
 			loop: true,      	// infinitely looping (boolean)
 			keys: true,       	// keyboard shortcuts (boolean)
 			dots: true,       	// display dots pagination (boolean)
-			arrows: true,   	// display prev/next arrows (boolean)	
+			arrows: false,   	// display prev/next arrows (boolean)	
 			prev: '&larr;',		// text or html inside prev button (string) 
 			next: '&rarr;',		// same as for prev option
 			fluid: false,      	// is it a percentage width? (boolean)
@@ -37,11 +37,23 @@ $(document).ready(function(){
 });
 </script>
 
+<script>
+    var unslider = $('.banner').unslider();
+    
+    $('.unslider-arrow').click(function() {
+        var fn = this.className.split(' ')[1];
+        
+        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+        unslider.data('unslider')[fn]();
+    });
+</script>
+
 </head> 
 
 <body> 
 
 <div class = "banner">
+	<a href="#" class="unslider-arrow prev">Previous slide</a>
 	<ul>
 		<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.33.31.png"></li>
 		<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.35.17.png"></li>
@@ -50,6 +62,7 @@ $(document).ready(function(){
 		<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.39.52.png"></li>
 		<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.41.44.png"></li>
 	</ul>
+	<a href="#" class="unslider-arrow next">Next slide</a>
 </div>
 
 <div class = "container"
