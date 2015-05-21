@@ -326,16 +326,22 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
     color:#fff
 }
 
-.prev img{
-	float: left;
-	height:40px;
-	width:40px
+.prev {
+position: absolute;
+top: 50%;
+bottom: 50%;
+left: 20px;
+font-size: 20px;
+z-index: 600;
 }
 
-.next img{
-	float: right;
-	height:40px;
-	width:40px
+.next {
+position: absolute;
+top: 50%;
+bottom: 50%;
+right: 20px;
+font-size: 20px;
+z-index: 600;
 }
 
 	/* Grid */
