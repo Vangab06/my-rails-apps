@@ -19,6 +19,15 @@ body, html {
 	height:100%;						// Set the height and width of a paragraph.
 										// The height property does not include padding, borders, or margins; it sets the height of the area inside the padding, 
 										// border, and margin of the element!
+	width: 100%;
+}
+
+.container{
+	padding:0 200px 0 280px;width:100%
+}
+
+.main{
+	width:100%
 }
 
 a.btn {									// Caracteristicas del boton normal
@@ -177,11 +186,12 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	{background-image:url(/assets/gplus-b3a33145641e08e048cd10ed0ece59ce.svg);
 	background-position:center center}
 	
-.portfolio .jumbotron
-	{height:500px;
+.portfolio .jumbotron{
+	height:500px;
 	overflow:hidden;
 	padding:0;
-	width:100%}
+	width:100%
+}
 	
 .portfolio .slideshow-container
 	{width:100%}

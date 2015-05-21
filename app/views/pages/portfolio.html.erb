@@ -42,36 +42,36 @@ $(document).ready(function(){
 </head> 
 
 <body>
-
-<div class = "container">
-	<div class = "banner">	
-		<ul>
-			<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.33.31.png"></li>
-			<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.35.17.png"></li>
-			<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.36.25.png"></li>
-			<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.38.27.png"></li>
-			<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.39.52.png"></li>
-			<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.41.44.png"></li>
-		</ul>
-	</div>
-</div>	
-
-<div class = "container"
-	<% @projects.each do |p| %>
-		<%= link_to (p) do %>
-			<div class ="project col-xs-4"> 
-				<div class="thumbnail-header"> 
-					<div class="thumbnail-header-btn"></div> 
-					<div class="thumbnail-header-btn"></div> 
-					<div class="thumbnail-header-btn"></div>
-				</div>
-				<img src= <%= p.screenshot %>> </img>
-				<h3><%= p.title %> </h3>
-				<p> <%= p.description %> </p>
+	<div class="main portfolio"> 
+		<div class="jumbotron slideshow"> 
+			<div class = "banner">	
+				<ul>
+					<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.33.31.png"></li>
+					<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.35.17.png"></li>
+					<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.36.25.png"></li>
+					<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.38.27.png"></li>
+					<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.39.52.png"></li>
+					<li><img src = "https://dl.dropboxusercontent.com/u/422140/Screenshot%202015-05-08%2011.41.44.png"></li>
+				</ul>
 			</div>
+		</div>
+	</div>
+	
+	<div class = "container"
+		<% @projects.each do |p| %>
+			<%= link_to (p) do %>
+				<div class ="project col-xs-4"> 
+					<div class="thumbnail-header"> 
+						<div class="thumbnail-header-btn"></div> 
+						<div class="thumbnail-header-btn"></div> 
+						<div class="thumbnail-header-btn"></div>
+					</div>
+					<img src= <%= p.screenshot %>> </img>
+					<h3><%= p.title %> </h3>
+					<p> <%= p.description %> </p>
+				</div>
+			<% end %>
 		<% end %>
-	<% end %>
-</div>
-
+	</div>
 </body> 
 </html>
