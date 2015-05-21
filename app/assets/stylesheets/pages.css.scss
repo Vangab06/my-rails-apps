@@ -1,53 +1,11 @@
-// Place all the styles related to the Pages controller here.
+// Place all the styles related to the Projects controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
-	margin:0;							// The margin clears an area around an element (outside the border). The margin does not have a background color, 
-										// and is completely transparent. The top, right, bottom, and left margin can be changed independently using separate
-										// properties. A shorthand margin property can also be used, to change all margins at once.
-	padding:0							// The padding clears an area around the content (inside the border) of an element. The padding is affected by the 
-										// background color of the element. The top, right, bottom, and left padding can be changed independently using 
-										// separate properties. A shorthand padding property can also be used, to change all paddings at once.
-}
-
-/* Aplica a todo */
-
-body, html {
-	font-family:'Roboto', sans-serif;
-	font-weight:300;					// Sets how thick or thin characters in text should be displayed: normal|bold|bolder|lighter|number|initial|inherit
-	height:100%;						// Set the height and width of a paragraph.
-										// The height property does not include padding, borders, or margins; it sets the height of the area inside the padding, 
-										// border, and margin of the element!
-	width: 100%;
-}
-
-.container{
-	padding:0 200px 0 280px;width:100%
-}
-
-.main{
-	width:100%
-}
-
-a.btn {									// Caracteristicas del boton normal
-	background-color:rgba(0,0,0,0.9);
-	border-radius:20;					// Redondea las esquinas del botón
-	color:#fff;							// Color del texto
-	font-size:18px;						// Tamaño de la letra dentro del botón
-	font-weight:500;
-	height:60px;						// Altura del boton
-	line-height:60px;					// Altura de las líneas de texto en el boton 
-	margin:40px 0px;					// Margen con respecto al container (?). 
-	padding:0px;			
-	transition:background-color .5s;
-	width:200px
-}
-
 /* Welcome Section */
 
-.main .container {					// La clase container centra la página con respecto a la ventana del navegador
-	margin:100px 0					// Margen Superior con respecto al Header del contenedor (container)
+.main .container {						// La clase container centra la página con respecto a la ventana del navegador
+	margin:100px 0						// Margen Superior con respecto al Header del contenedor (container)
 }
 
 .main h2 {
@@ -185,31 +143,6 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 .gplus
 	{background-image:url(/assets/gplus-b3a33145641e08e048cd10ed0ece59ce.svg);
 	background-position:center center}
-	
-.portfolio .jumbotron{
-	height:500px;
-	overflow:hidden;
-	padding:0;
-	width:100%
-}
-	
-.portfolio .slideshow-container
-	{width:100%}
-	
-.portfolio .slide
-	{height:500px;
-	overflow:hidden;
-	-webkit-transform-style:preserve-3d;
-	-moz-transform-style:preserve-3d;
-	transform-style:preserve-3d;
-	width:100%}
-	
-.slide img {
-	position:relative;
-	top:50%;
-	transform:translateY(-50%);
-	width:100%
-}
 
 /* Frame de cada proyecto */
 
@@ -231,35 +164,7 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	
 /* Display de cada proyecto */	
 	
-.project,.project:hover {
-	border: 0;							// The CSS border properties allow you to specify the style, size, and color of an element's border
-	border-radius:0;					// The border-radius property is a shorthand property for setting the four border-*-radius properties
-	height:330px;
-	width: 370px;
-	color:#000;							// Color del texto <p> y <h3> de cada proyecto
-	
-	text-decoration:none;				// The text-decoration property specifies the decoration added to text. text-decoration: none|underline|
-										// overline|line-through|initial|inherit;
-	transition:color .5s;				// The transition property is a shorthand property for the four transition properties: transition-property, 
-										// transition-duration, transition-timing-function, and transition-delay.
-	overflow:hidden;						// The overflow property specifies what happens if content overflows an element's box.
-	padding: 0 0 0 0;
-}
-	
-.project:hover {
-	color:blue
-}
 
-.project img {
-	border: none;
-	display:inline-block;
-	max-width:100%;
-	height:auto
-}
-
-.project h3,.project p,.about h2,.about p {
-	padding:0 0 0;
-}
 	
 
 	
@@ -301,71 +206,7 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 		{margin:0}
 	}
 
-/* Slideshow */
-
-.wrapper {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-}
-
-.prev {
-	display:block;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	left: 20px;
-	height:24px;
-	width:24px;
-	font-size: 20px;
-	z-index: 600;
-}
-
-.next {
-	display:block;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	right: 20px;
-	height:24px;
-	width:24px;
-	font-size: 20px;
-	z-index: 600;
-}
-
-.banner { 
-	position: relative;			// The position property specifies the type of positioning method used for an element (static, relative, absolute or fixed).
-								// relative: the element is positioned relative to its normal position, so "left:20" adds 20 pixels to the element's LEFT 
-								// position 
-	overflow: auto;				// The overflow property specifies what happens if content overflows an element's box.
-								// auto: If overflow is clipped, a scroll-bar should be added to see the rest of the content
-}
-
-.banner li {
-	list-style: none;			// The list-style shorthand property sets all the list properties in one declaration. The properties that can be set, 
-								// are (in order): list-style-type, list-style-position, list-style-image. If one of the values above are missing, 
-								// e.g. "list-style:circle inside;", the default value for the missing property will be inserted, if any.
-}
-
-.banner ul li {
-	float: left;				// The float property specifies whether or not a box (an element) should float.
-}
-
-.dots li {
-	position: relative;
-    bottom: 10px;
-    left: 215px;
-    display: inline;
-    margin: 5px;
- }
- 
-.dots .active {
-    color:#fff
-}
-
-	/* Grid */
+/* Grid */
 
 * {
   -webkit-box-sizing: border-box;
