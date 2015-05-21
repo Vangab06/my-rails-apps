@@ -340,16 +340,9 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	list-style: none;			// The list-style shorthand property sets all the list properties in one declaration. The properties that can be set, 
 								// are (in order): list-style-type, list-style-position, list-style-image. If one of the values above are missing, 
 								// e.g. "list-style:circle inside;", the default value for the missing property will be inserted, if any.
-	position: relative;
-    top: 0;
-    bottom: 0;
-	min-height: 100%;
-	width: 100%;
 }
 
 .banner ul li {
-	min-height: 100%;
-	width: 100%;
 	float: left;				// The float property specifies whether or not a box (an element) should float.
 }
 
