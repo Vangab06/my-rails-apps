@@ -2,35 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/* Welcome Section */
-
-.main .container {						// La clase container centra la página con respecto a la ventana del navegador
-	margin:100px 0						// Margen Superior con respecto al Header del contenedor (container)
+* {
+	margin:0;							// The margin clears an area around an element (outside the border). The margin does not have a background color, 
+										// and is completely transparent. The top, right, bottom, and left margin can be changed independently using separate
+										// properties. A shorthand margin property can also be used, to change all margins at once.
+	padding:0							// The padding clears an area around the content (inside the border) of an element. The padding is affected by the 
+										// background color of the element. The top, right, bottom, and left padding can be changed independently using 
+										// separate properties. A shorthand padding property can also be used, to change all paddings at once.
 }
 
-.main h2 {
-	color:#000;							// Color del texto h2 dentro de la sección main
-	font-size:48px;						// Tamaño de la letra en la sección h2
-	line-height:56px;					// Separación de las líneas de texto
-	text-align:right					// Alineación: left, center, right
+body, html {
+	font-family:'Roboto', sans-serif;
+	font-weight:300;					// Sets how thick or thin characters in text should be displayed: normal|bold|bolder|lighter|number|initial|inherit
+	height:100%;						// Set the height and width of a paragraph.
+										// The height property does not include padding, borders, or margins; it sets the height of the area inside the padding, 
+										// border, and margin of the element!
+	width: 100%;
 }
-	
-.home h2
-	{color:#fff}						//Le da al texto h2 en la sección main el color #fff (blanco) todo lo demás va con el color #000 definido en .main h2
-	
-a.btn:hover,.nav li a:hover,.nav-btn:hover {
-	background-color:#cc6cff;			//Cuando el mouse pasa sobre el boton cambia su color a #cc6cff
-	color:#fff;							//Color del texto del boton que también cambia
-	transition:background-color .5s		//Tiempo que tarda el boton en cambiar una vez el mouse esta sobre él
+
+.container{
+	padding:0 200px 0 280px;
+	width:100%
 }
-	
-.home .jumbotron {
-	background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center; 
-	background-size:cover;				// Puede ser: auto|length|cover|contain|initial|inherit. Cover scale the background image to be as large as possible
-										// so that the background area is completely covered by the background image. Some parts of the background image
-										// may not be in view within the background positioning area
-	min-height:600px;					// Altura mínima que tiene la sección
-	width:100%							// Anchura de la sección, si es menor a 100% no cubre toda la pantalla
+
+.main{
+	width:100%
+}
+
+a.btn {									// Caracteristicas del boton normal
+	background-color:rgba(0,0,0,0.9);
+	border-radius:20;					// Redondea las esquinas del botón
+	color:#fff;							// Color del texto
+	font-size:18px;						// Tamaño de la letra dentro del botón
+	font-weight:500;
+	height:60px;						// Altura del boton
+	line-height:60px;					// Altura de las líneas de texto en el boton 
+	margin:40px 0px;					// Margen con respecto al container (?). 
+	padding:0px;			
+	transition:background-color .5s;
+	width:200px
 }
 
 /* Header de la aplicación */
@@ -63,6 +73,37 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	height:100px;
 	margin:0;
 	text-align:right					// Alineación de texto a la derecha de la línea del header
+}
+
+/* Welcome Section */
+
+.main .container {						// La clase container centra la página con respecto a la ventana del navegador
+	margin:100px 0						// Margen Superior con respecto al Header del contenedor (container)
+}
+
+.main h2 {
+	color:#000;							// Color del texto h2 dentro de la sección main
+	font-size:48px;						// Tamaño de la letra en la sección h2
+	line-height:56px;					// Separación de las líneas de texto
+	text-align:right					// Alineación: left, center, right
+}
+	
+.home h2
+	{color:#fff}						//Le da al texto h2 en la sección main el color #fff (blanco) todo lo demás va con el color #000 definido en .main h2
+	
+a.btn:hover,.nav li a:hover,.nav-btn:hover {
+	background-color:#cc6cff;			//Cuando el mouse pasa sobre el boton cambia su color a #cc6cff
+	color:#fff;							//Color del texto del boton que también cambia
+	transition:background-color .5s		//Tiempo que tarda el boton en cambiar una vez el mouse esta sobre él
+}
+	
+.home .jumbotron {
+	background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center; 
+	background-size:cover;				// Puede ser: auto|length|cover|contain|initial|inherit. Cover scale the background image to be as large as possible
+										// so that the background area is completely covered by the background image. Some parts of the background image
+										// may not be in view within the background positioning area
+	min-height:600px;					// Altura mínima que tiene la sección
+	width:100%							// Anchura de la sección, si es menor a 100% no cubre toda la pantalla
 }
 
 /* Footer de la aplicación */
@@ -146,6 +187,58 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 
 /* Frame de cada proyecto */
 
+.portfolio .jumbotron{
+	height:500px;
+	overflow:hidden;
+	padding:0;
+	width:100%
+}
+
+.portfolio .banner{
+	width:100%
+}
+
+.portfolio .banner{
+	height:500px;
+	overflow:hidden;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	transform-style:preserve-3d;
+	width:100%
+}
+
+.banner img{
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	width:100%
+}
+
+.project,.project:hover{
+	color:#000;
+	margin:0 0 40px;
+	text-decoration:none;
+	transition:color .5s
+}
+
+.project:hover{
+	color:#cc6cff
+}
+
+.project h3,.project p,.about h2,.about p{
+	padding:0 20px 0
+}
+
+.project p{
+	-webkit-box-orient:vertical;
+	display:block;
+	display:-webkit-box;
+	-webkit-line-clamp:3;
+	max-height:300px;
+	overflow:hidden;
+	text-overflow:ellipsis
+}
+
 .thumbnail-header {
 	background-color:#eaeff4;			// Color de la franja superior del marco de cada proyecto
 	display:block;						// block Displays an element as a block element (like <p>) 
@@ -161,759 +254,57 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover {
 	margin:5px 0 0 5px;
 	width:10px
 }
+
+.thumbnail{
+	border:0;
+	border-radius:0;
+	max-height:240px;
+	padding:0;
+	overflow:hidden
+}
 	
 /* Display de cada proyecto */	
 	
-
-	
-
-	
-.about {
+.about .thumbnail{
 	max-height:400px
 }
-	
-.about h2
-	{margin:0 0 40px}
-	
-.contact .row
-	{margin:80px 0 0}
-	
-.contact .col-md-2 a
-	{display:block;
+
+.about h2{
+	margin:0 0 40px
+}
+
+.contact .row{
+	margin:80px 0 0
+}
+
+.contact .col-md-2 a{
+	display:block;
 	height:80px;
 	margin:0 auto 40px;
 	text-indent:-9999px;
-	width:80px}
-	
-.highlight
-	{background-color:#eaeff4;
+	width:80px
+}
+
+.highlight{
+	background-color:#eaeff4;
 	color:#000;
-	padding:0 10px 0}
-	
-.right
-	{float:right}
+	padding:0 10px 0
+}
 
-@media screen and (max-width: 800px)
-	{.container
-		{padding:0 20px 0 100px;
-		width:100%}
+.right{
+	float:right
+}
 
-	.slide img
-		{height:100%;
-		width:auto}
-	
-	.contact .row:last-child
-		{margin:0}
+@media screen and (max-width: 800px){
+	.container{
+		padding:0 20px 0 100px;
+		width:100%
 	}
-
-/* Grid */
-
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-.row {						// Con esta sección no pasa nada !!!!
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
-  float: center;
-}
-.col-xs-12 {
-  width: 100%;
-}
-.col-xs-11 {
-  width: 91.66666667%;
-}
-.col-xs-10 {
-  width: 83.33333333%;
-}
-.col-xs-9 {
-  width: 75%;
-}
-.col-xs-8 {
-  width: 66.66666667%;
-}
-.col-xs-7 {
-  width: 58.33333333%;
-}
-.col-xs-6 {
-  width: 50%;
-}
-.col-xs-5 {
-  width: 41.66666667%;
-}
-.col-xs-4 {
-  width: 33.33333333%;
-}
-.col-xs-3 {
-  width: 25%;
-}
-.col-xs-2 {
-  width: 16.66666667%;
-}
-.col-xs-1 {
-  width: 8.33333333%;
-}
-.col-xs-pull-12 {
-  right: 100%;
-}
-.col-xs-pull-11 {
-  right: 91.66666667%;
-}
-.col-xs-pull-10 {
-  right: 83.33333333%;
-}
-.col-xs-pull-9 {
-  right: 75%;
-}
-.col-xs-pull-8 {
-  right: 66.66666667%;
-}
-.col-xs-pull-7 {
-  right: 58.33333333%;
-}
-.col-xs-pull-6 {
-  right: 50%;
-}
-.col-xs-pull-5 {
-  right: 41.66666667%;
-}
-.col-xs-pull-4 {
-  right: 33.33333333%;
-}
-.col-xs-pull-3 {
-  right: 25%;
-}
-.col-xs-pull-2 {
-  right: 16.66666667%;
-}
-.col-xs-pull-1 {
-  right: 8.33333333%;
-}
-.col-xs-pull-0 {
-  right: auto;
-}
-.col-xs-push-12 {
-  left: 100%;
-}
-.col-xs-push-11 {
-  left: 91.66666667%;
-}
-.col-xs-push-10 {
-  left: 83.33333333%;
-}
-.col-xs-push-9 {
-  left: 75%;
-}
-.col-xs-push-8 {
-  left: 66.66666667%;
-}
-.col-xs-push-7 {
-  left: 58.33333333%;
-}
-.col-xs-push-6 {
-  left: 50%;
-}
-.col-xs-push-5 {
-  left: 41.66666667%;
-}
-.col-xs-push-4 {
-  left: 33.33333333%;
-}
-.col-xs-push-3 {
-  left: 25%;
-}
-.col-xs-push-2 {
-  left: 16.66666667%;
-}
-.col-xs-push-1 {
-  left: 8.33333333%;
-}
-.col-xs-push-0 {
-  left: auto;
-}
-.col-xs-offset-12 {
-  margin-left: 100%;
-}
-.col-xs-offset-11 {
-  margin-left: 91.66666667%;
-}
-.col-xs-offset-10 {
-  margin-left: 83.33333333%;
-}
-.col-xs-offset-9 {
-  margin-left: 75%;
-}
-.col-xs-offset-8 {
-  margin-left: 66.66666667%;
-}
-.col-xs-offset-7 {
-  margin-left: 58.33333333%;
-}
-.col-xs-offset-6 {
-  margin-left: 50%;
-}
-.col-xs-offset-5 {
-  margin-left: 41.66666667%;
-}
-.col-xs-offset-4 {
-  margin-left: 33.33333333%;
-}
-.col-xs-offset-3 {
-  margin-left: 25%;
-}
-.col-xs-offset-2 {
-  margin-left: 16.66666667%;
-}
-.col-xs-offset-1 {
-  margin-left: 8.33333333%;
-}
-.col-xs-offset-0 {
-  margin-left: 0%;
-}
-@media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
-  .col-sm-11 {
-    width: 91.66666667%;
-  }
-  .col-sm-10 {
-    width: 83.33333333%;
-  }
-  .col-sm-9 {
-    width: 75%;
-  }
-  .col-sm-8 {
-    width: 66.66666667%;
-  }
-  .col-sm-7 {
-    width: 58.33333333%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-5 {
-    width: 41.66666667%;
-  }
-  .col-sm-4 {
-    width: 33.33333333%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-2 {
-    width: 16.66666667%;
-  }
-  .col-sm-1 {
-    width: 8.33333333%;
-  }
-  .col-sm-pull-12 {
-    right: 100%;
-  }
-  .col-sm-pull-11 {
-    right: 91.66666667%;
-  }
-  .col-sm-pull-10 {
-    right: 83.33333333%;
-  }
-  .col-sm-pull-9 {
-    right: 75%;
-  }
-  .col-sm-pull-8 {
-    right: 66.66666667%;
-  }
-  .col-sm-pull-7 {
-    right: 58.33333333%;
-  }
-  .col-sm-pull-6 {
-    right: 50%;
-  }
-  .col-sm-pull-5 {
-    right: 41.66666667%;
-  }
-  .col-sm-pull-4 {
-    right: 33.33333333%;
-  }
-  .col-sm-pull-3 {
-    right: 25%;
-  }
-  .col-sm-pull-2 {
-    right: 16.66666667%;
-  }
-  .col-sm-pull-1 {
-    right: 8.33333333%;
-  }
-  .col-sm-pull-0 {
-    right: auto;
-  }
-  .col-sm-push-12 {
-    left: 100%;
-  }
-  .col-sm-push-11 {
-    left: 91.66666667%;
-  }
-  .col-sm-push-10 {
-    left: 83.33333333%;
-  }
-  .col-sm-push-9 {
-    left: 75%;
-  }
-  .col-sm-push-8 {
-    left: 66.66666667%;
-  }
-  .col-sm-push-7 {
-    left: 58.33333333%;
-  }
-  .col-sm-push-6 {
-    left: 50%;
-  }
-  .col-sm-push-5 {
-    left: 41.66666667%;
-  }
-  .col-sm-push-4 {
-    left: 33.33333333%;
-  }
-  .col-sm-push-3 {
-    left: 25%;
-  }
-  .col-sm-push-2 {
-    left: 16.66666667%;
-  }
-  .col-sm-push-1 {
-    left: 8.33333333%;
-  }
-  .col-sm-push-0 {
-    left: auto;
-  }
-  .col-sm-offset-12 {
-    margin-left: 100%;
-  }
-  .col-sm-offset-11 {
-    margin-left: 91.66666667%;
-  }
-  .col-sm-offset-10 {
-    margin-left: 83.33333333%;
-  }
-  .col-sm-offset-9 {
-    margin-left: 75%;
-  }
-  .col-sm-offset-8 {
-    margin-left: 66.66666667%;
-  }
-  .col-sm-offset-7 {
-    margin-left: 58.33333333%;
-  }
-  .col-sm-offset-6 {
-    margin-left: 50%;
-  }
-  .col-sm-offset-5 {
-    margin-left: 41.66666667%;
-  }
-  .col-sm-offset-4 {
-    margin-left: 33.33333333%;
-  }
-  .col-sm-offset-3 {
-    margin-left: 25%;
-  }
-  .col-sm-offset-2 {
-    margin-left: 16.66666667%;
-  }
-  .col-sm-offset-1 {
-    margin-left: 8.33333333%;
-  }
-  .col-sm-offset-0 {
-    margin-left: 0%;
-  }
-}
-@media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-  .col-md-11 {
-    width: 91.66666667%;
-  }
-  .col-md-10 {
-    width: 83.33333333%;
-  }
-  .col-md-9 {
-    width: 75%;
-  }
-  .col-md-8 {
-    width: 66.66666667%;
-  }
-  .col-md-7 {
-    width: 58.33333333%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-5 {
-    width: 41.66666667%;
-  }
-  .col-md-4 {
-    width: 33.33333333%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-2 {
-    width: 16.66666667%;
-  }
-  .col-md-1 {
-    width: 8.33333333%;
-  }
-  .col-md-pull-12 {
-    right: 100%;
-  }
-  .col-md-pull-11 {
-    right: 91.66666667%;
-  }
-  .col-md-pull-10 {
-    right: 83.33333333%;
-  }
-  .col-md-pull-9 {
-    right: 75%;
-  }
-  .col-md-pull-8 {
-    right: 66.66666667%;
-  }
-  .col-md-pull-7 {
-    right: 58.33333333%;
-  }
-  .col-md-pull-6 {
-    right: 50%;
-  }
-  .col-md-pull-5 {
-    right: 41.66666667%;
-  }
-  .col-md-pull-4 {
-    right: 33.33333333%;
-  }
-  .col-md-pull-3 {
-    right: 25%;
-  }
-  .col-md-pull-2 {
-    right: 16.66666667%;
-  }
-  .col-md-pull-1 {
-    right: 8.33333333%;
-  }
-  .col-md-pull-0 {
-    right: auto;
-  }
-  .col-md-push-12 {
-    left: 100%;
-  }
-  .col-md-push-11 {
-    left: 91.66666667%;
-  }
-  .col-md-push-10 {
-    left: 83.33333333%;
-  }
-  .col-md-push-9 {
-    left: 75%;
-  }
-  .col-md-push-8 {
-    left: 66.66666667%;
-  }
-  .col-md-push-7 {
-    left: 58.33333333%;
-  }
-  .col-md-push-6 {
-    left: 50%;
-  }
-  .col-md-push-5 {
-    left: 41.66666667%;
-  }
-  .col-md-push-4 {
-    left: 33.33333333%;
-  }
-  .col-md-push-3 {
-    left: 25%;
-  }
-  .col-md-push-2 {
-    left: 16.66666667%;
-  }
-  .col-md-push-1 {
-    left: 8.33333333%;
-  }
-  .col-md-push-0 {
-    left: auto;
-  }
-  .col-md-offset-12 {
-    margin-left: 100%;
-  }
-  .col-md-offset-11 {
-    margin-left: 91.66666667%;
-  }
-  .col-md-offset-10 {
-    margin-left: 83.33333333%;
-  }
-  .col-md-offset-9 {
-    margin-left: 75%;
-  }
-  .col-md-offset-8 {
-    margin-left: 66.66666667%;
-  }
-  .col-md-offset-7 {
-    margin-left: 58.33333333%;
-  }
-  .col-md-offset-6 {
-    margin-left: 50%;
-  }
-  .col-md-offset-5 {
-    margin-left: 41.66666667%;
-  }
-  .col-md-offset-4 {
-    margin-left: 33.33333333%;
-  }
-  .col-md-offset-3 {
-    margin-left: 25%;
-  }
-  .col-md-offset-2 {
-    margin-left: 16.66666667%;
-  }
-  .col-md-offset-1 {
-    margin-left: 8.33333333%;
-  }
-  .col-md-offset-0 {
-    margin-left: 0%;
-  }
-}
-@media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
-  .col-lg-11 {
-    width: 91.66666667%;
-  }
-  .col-lg-10 {
-    width: 83.33333333%;
-  }
-  .col-lg-9 {
-    width: 75%;
-  }
-  .col-lg-8 {
-    width: 66.66666667%;
-  }
-  .col-lg-7 {
-    width: 58.33333333%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-5 {
-    width: 41.66666667%;
-  }
-  .col-lg-4 {
-    width: 33.33333333%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-2 {
-    width: 16.66666667%;
-  }
-  .col-lg-1 {
-    width: 8.33333333%;
-  }
-  .col-lg-pull-12 {
-    right: 100%;
-  }
-  .col-lg-pull-11 {
-    right: 91.66666667%;
-  }
-  .col-lg-pull-10 {
-    right: 83.33333333%;
-  }
-  .col-lg-pull-9 {
-    right: 75%;
-  }
-  .col-lg-pull-8 {
-    right: 66.66666667%;
-  }
-  .col-lg-pull-7 {
-    right: 58.33333333%;
-  }
-  .col-lg-pull-6 {
-    right: 50%;
-  }
-  .col-lg-pull-5 {
-    right: 41.66666667%;
-  }
-  .col-lg-pull-4 {
-    right: 33.33333333%;
-  }
-  .col-lg-pull-3 {
-    right: 25%;
-  }
-  .col-lg-pull-2 {
-    right: 16.66666667%;
-  }
-  .col-lg-pull-1 {
-    right: 8.33333333%;
-  }
-  .col-lg-pull-0 {
-    right: auto;
-  }
-  .col-lg-push-12 {
-    left: 100%;
-  }
-  .col-lg-push-11 {
-    left: 91.66666667%;
-  }
-  .col-lg-push-10 {
-    left: 83.33333333%;
-  }
-  .col-lg-push-9 {
-    left: 75%;
-  }
-  .col-lg-push-8 {
-    left: 66.66666667%;
-  }
-  .col-lg-push-7 {
-    left: 58.33333333%;
-  }
-  .col-lg-push-6 {
-    left: 50%;
-  }
-  .col-lg-push-5 {
-    left: 41.66666667%;
-  }
-  .col-lg-push-4 {
-    left: 33.33333333%;
-  }
-  .col-lg-push-3 {
-    left: 25%;
-  }
-  .col-lg-push-2 {
-    left: 16.66666667%;
-  }
-  .col-lg-push-1 {
-    left: 8.33333333%;
-  }
-  .col-lg-push-0 {
-    left: auto;
-  }
-  .col-lg-offset-12 {
-    margin-left: 100%;
-  }
-  .col-lg-offset-11 {
-    margin-left: 91.66666667%;
-  }
-  .col-lg-offset-10 {
-    margin-left: 83.33333333%;
-  }
-  .col-lg-offset-9 {
-    margin-left: 75%;
-  }
-  .col-lg-offset-8 {
-    margin-left: 66.66666667%;
-  }
-  .col-lg-offset-7 {
-    margin-left: 58.33333333%;
-  }
-  .col-lg-offset-6 {
-    margin-left: 50%;
-  }
-  .col-lg-offset-5 {
-    margin-left: 41.66666667%;
-  }
-  .col-lg-offset-4 {
-    margin-left: 33.33333333%;
-  }
-  .col-lg-offset-3 {
-    margin-left: 25%;
-  }
-  .col-lg-offset-2 {
-    margin-left: 16.66666667%;
-  }
-  .col-lg-offset-1 {
-    margin-left: 8.33333333%;
-  }
-  .col-lg-offset-0 {
-    margin-left: 0%;
-  }
-}
-
-.clearfix:before,
-.clearfix:after,
-.container:before,
-.container:after,
-.container-fluid:before,
-.container-fluid:after,
-
-.row:before,
-.row:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after,
-.container:after,
-.container-fluid:after,
-.row:after {
-  clear: both;
-}
-
-@media (max-width: 600px) {
-  .projects h2 {
-    top: 5%;
-  }
-
-  .projects a {
-    padding: 8px 15px;
-  }
+	.banner img{
+		height:100%;
+		width:auto
+	}
+	.contact .row:last-child{
+		margin:0
+	}
 }
