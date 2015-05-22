@@ -77,9 +77,9 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover{
 	width:100%
 }
 
-//.portfolio .banner{
-// width:100%
-// }
+.portfolio .banner{
+	width:100%
+}
 
 .portfolio .banner{
 	height:600px;
@@ -197,7 +197,7 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover{
 		width:100%
 	}
 	
-	.slide img{
+	.banner img{
 		height:100%;
 		width:auto
 	}
@@ -205,69 +205,5 @@ a.btn:hover,.nav li a:hover,.nav-btn:hover{
 	.contact .row:last-child{
 		margin:0
 	}
-}
-
-/* Slideshow */
-
-.wrapper {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	left: 0;
-	top: 0;
-}
-
-.prev {
-	display:block;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	left: 20px;
-	height:24px;
-	width:24px;
-	font-size: 20px;
-	z-index: 600;
-}
-
-.next {
-	display:block;
-	position: absolute;
-	top: 50%;
-	bottom: 50%;
-	right: 20px;
-	height:24px;
-	width:24px;
-	font-size: 20px;
-	z-index: 600;
-}
-
-.banner { 
-	position: relative;			// The position property specifies the type of positioning method used for an element (static, relative, absolute or fixed).
-								// relative: the element is positioned relative to its normal position, so "left:20" adds 20 pixels to the element's LEFT 
-								// position 
-	overflow: auto;				// The overflow property specifies what happens if content overflows an element's box.
-								// auto: If overflow is clipped, a scroll-bar should be added to see the rest of the content
-}
-
-.banner li {
-	list-style: none;			// The list-style shorthand property sets all the list properties in one declaration. The properties that can be set, 
-								// are (in order): list-style-type, list-style-position, list-style-image. If one of the values above are missing, 
-								// e.g. "list-style:circle inside;", the default value for the missing property will be inserted, if any.
-}
-
-.banner ul li {
-	float: left;				// The float property specifies whether or not a box (an element) should float.
-}
-
-.dots li {
-	position: relative;
-    bottom: 10px;
-    left: 215px;
-    display: inline;
-    margin: 5px;
- }
- 
-.dots .active {
-    color:#fff
 }
 
